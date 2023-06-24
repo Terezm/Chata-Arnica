@@ -185,7 +185,69 @@ span {
 
 /* SEM ZAČNĚTE PSÁT SVÉ STYLY PRO MOBIL */
 
+body,
+a {
+  color: var(--text);
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.logo {
+  font-family: 'Dawning of a New Day', sans-serif;
+}
+
+.pitch {
+  text-align: center;
+  font-family: 'Lora', sans-serif;
+  background-color: var(--background-secondary)
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-secondary)
+}
+
+.subheading {
+  background-color: var(--background-primary);
+  text-align: center;
+}
+
+.subheading__content {
+  max-width: 800px;
+}
+
+.pricelist {
+  background-color: var(--background-secondary)
+}
+
+.review {
+  background-color: var(--background-primary)
+}
+
+footer {
+  background-color: var(--background-secondary)
+}
+
+.intro-image {
+  background-image: url('./images/arnica-intro.jpg');
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer {
+  max-width: 270px;
+  width: 80%;
+}
+
+.review__content {
+  border: 2px solid var(--background-secondary);
+  font-style: oblique;
+}
+
 @media (min-width: 840px) {
+
   /* HLAVIČKA - NAVIGACE */
   .page-header {
     padding: 2rem 4rem;
@@ -221,4 +283,53 @@ span {
   }
 
   /* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 800PX */
+
+  .pricelist__content {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .offer {
+    width: 220px;
+  }
+
+  .review__photo {
+    background-image: url('./images/reviewer.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+  }
+
+  .review__text {
+    width: 250px;
+    background-color: var(--background-secondary);
+    position: relative;
+    left: 60px;
+  }
+
+  .review__content {
+    border: none;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: start;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .pricelist__content {
+    gap: 6rem;
+  }
+
+  .footer {
+    gap: 6rem;
+  }
 }
